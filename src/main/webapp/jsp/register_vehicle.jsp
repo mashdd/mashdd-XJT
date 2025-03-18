@@ -32,6 +32,13 @@
         </div>
         <button type="submit" class="btn btn-primary">备案车辆</button>
     </form>
+
+    <c:if test="${param.status == 'success'}">
+        <div class="alert alert-success mt-3">车辆备案成功！</div>
+    </c:if>
+    <c:if test="${param.status == 'failed'}">
+        <div class="alert alert-danger mt-3">车辆备案失败，请重试！</div>
+    </c:if>
 </div>
 
 <script src="${pageContext.request.contextPath}/static/bootstrap/js/bootstrap.bundle.min.js"></script>

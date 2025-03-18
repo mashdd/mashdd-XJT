@@ -33,9 +33,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto">
-                <li class="nav-item"><a class="nav-link" href="register_vehicle.jsp">新车注册登记</a></li>
-                <li class="nav-item"><a class="nav-link" href="select_vehicle_number.jsp">新车选号</a></li>
-                <li class="nav-item"><a class="nav-link" href="violationQuery.jsp">违章查询</a></li>
+                <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/jsp/register_vehicle.jsp">新车注册登记</a></li>
+                <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/jsp/select_vehicle_number.jsp">新车选号</a></li>
+                <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/jsp/violationQuery.jsp">违章查询</a></li>
             </ul>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/logout">退出登录</a></li>
@@ -57,7 +57,7 @@
                         <div class="card-body">
                             <h5 class="card-title">新车注册登记</h5>
                             <p class="card-text">登记新购车辆信息，获取临时车牌。</p>
-                            <a href="register_vehicle.jsp" class="btn btn-primary">前往登记</a>
+                            <a href="${pageContext.request.contextPath}/jsp/register_vehicle.jsp" class="btn btn-primary">前往登记</a>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                         <div class="card-body">
                             <h5 class="card-title">新车选号</h5>
                             <p class="card-text">为已登记的车辆选择正式车牌号。</p>
-                            <a href="select_vehicle_number.jsp" class="btn btn-primary">前往选号</a>
+                            <a href="${pageContext.request.contextPath}/jsp/select_vehicle_number.jsp" class="btn btn-primary">前往选号</a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                         <div class="card-body">
                             <h5 class="card-title">违章查询</h5>
                             <p class="card-text">查询当前登记车辆的交通违章记录。</p>
-                            <a href="violationQuery.jsp" class="btn btn-danger">查询违章</a>
+                            <a href="${pageContext.request.contextPath}/jsp/violationQuery.jsp" class="btn btn-danger">查询违章</a>
                         </div>
                     </div>
                 </div>
